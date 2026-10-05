@@ -5,8 +5,6 @@ server:
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/lovable-account-db
-    username: user
-    password: password
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
