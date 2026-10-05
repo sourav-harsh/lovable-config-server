@@ -10,6 +10,12 @@ spring:
     hibernate:
       ddl-auto: create
 
+stripe:
+  api:
+    secret: ${STRIPE_API_KEY}
+  webhook:
+    secret: ${STRIPE_WEBHOOK_SECRET}
+
 ---
 
 spring:
