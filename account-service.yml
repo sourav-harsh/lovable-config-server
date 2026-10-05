@@ -12,9 +12,9 @@ spring:
 
 stripe:
   api:
-    secret: ${STRIPE_API_KEY}
+    secret: ${STRIPE_API_KEY:kjfiosenweiocnioncodsnoicnc}
   webhook:
-    secret: ${STRIPE_WEBHOOK_SECRET}
+    secret: ${STRIPE_WEBHOOK_SECRET:web_jfdlfjlsflkdsjldjfldfj}
 
 ---
 
