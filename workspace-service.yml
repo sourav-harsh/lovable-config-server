@@ -5,8 +5,6 @@ server:
 spring:
   datasource:
     url: jdbc:postgresql://localhost:9010/lovable-workspace-db
-    username: user
-    password: password
     driver-class-name: org.postgresql.Driver
   data:
     redis:
