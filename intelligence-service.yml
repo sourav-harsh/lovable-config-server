@@ -14,7 +14,7 @@ spring:
       base-url: https://openrouter.ai/api
       chat:
         options:
-          model: inclusionai/ling-3.0-flash-sante:free
+          model: nvidia/nemotron-3.5-lightning:free
           temperature: 0.2
       embedding:
         options:
