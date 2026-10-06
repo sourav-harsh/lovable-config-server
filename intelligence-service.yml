@@ -10,11 +10,11 @@ spring:
   ai:
     model.chat: openai
     openai:
-      api-key: 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
+      api-key: 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
       base-url: https://openrouter.ai/api
       chat:
         options:
-          model: google/gemini-3-flash-preview
+          model: nvidia/nemotron-3-ultra-550b-a55b:free
           temperature: 0.2
       embedding:
         options:
