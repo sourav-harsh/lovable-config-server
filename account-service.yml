@@ -8,11 +8,11 @@ spring:
     driver-class-name: org.postgresql.Driver
 
 
-stripe:
-  api:
-    secret: ${STRIPE_API_KEY:kjfiosenweiocnioncodsnoicnc}
-  webhook:
-    secret: ${STRIPE_WEBHOOK_SECRET:web_jfdlfjlsflkdsjldjfldfj}
+# stripe:
+#   api:
+#     secret: ${STRIPE_API_KEY:kjfiosenweiocnioncodsnoicnc}
+#   webhook:
+#     secret: ${STRIPE_WEBHOOK_SECRET:web_jfdlfjlsflkdsjldjfldfj}
 
 ---
 
