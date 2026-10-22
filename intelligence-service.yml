@@ -3,27 +3,40 @@ server:
   servlet.context-path: /intelligence
 
 spring:
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        options:
+          model: llama3.2
+          temperature: 0.7
+          num-predict: 500 # Restrict the max number of tokens generated
+      # Enable if you want to use local text-embeddings (e.g., for RAG)
+      embedding:
+        options:
+          model: nomic-embed-text 
+
   datasource:
     url: jdbc:postgresql://localhost:5432/lovable-intelligence-db
     driver-class-name: org.postgresql.Driver
 
-  ai:
-    retry:
-        max-attempts: 5          # Number of retry attempts before giving up
-        initial-interval: 2s     # Wait 2 seconds before the first retry
-        multiplier: 2.0          # Double the wait time on subsequent retries (2s -> 4s -> 8s)
-        max-interval: 15s 
-    model.chat: openai
-    openai:
-      api-key: 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
-      base-url: https://openrouter.ai/api
-      chat:
-        options:
-          model: recursive/flint-v1.0:free
-          temperature: 0.2
-      embedding:
-        options:
-          model: qwen/qwen3-embedding-8b
+  # ai:
+  #   retry:
+  #       max-attempts: 5          # Number of retry attempts before giving up
+  #       initial-interval: 2s     # Wait 2 seconds before the first retry
+  #       multiplier: 2.0          # Double the wait time on subsequent retries (2s -> 4s -> 8s)
+  #       max-interval: 15s 
+  #   model.chat: openai
+  #   openai:
+  #     api-key: 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
+  #     base-url: https://openrouter.ai/api
+  #     chat:
+  #       options:
+  #         model: recursive/flint-v1.0:free
+  #         temperature: 0.2
+  #     embedding:
+  #       options:
+  #         model: qwen/qwen3-embedding-8b
 
 ---
 
