@@ -16,9 +16,9 @@ spring:
         options:
           model: recursive/flint-v1.0:free
           temperature: 0.2
-      # embedding:
-      #   options:
-      #     model: qwen/qwen3-embedding-8b
+      embedding:
+        options:
+          model: qwen/qwen3-embedding-8b
 
 ---
 
