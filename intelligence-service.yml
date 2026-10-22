@@ -8,6 +8,11 @@ spring:
     driver-class-name: org.postgresql.Driver
 
   ai:
+  retry:
+      max-attempts: 5          # Number of retry attempts before giving up
+      initial-interval: 2s     # Wait 2 seconds before the first retry
+      multiplier: 2.0          # Double the wait time on subsequent retries (2s -> 4s -> 8s)
+      max-interval: 15s 
     model.chat: openai
     openai:
       api-key: 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
