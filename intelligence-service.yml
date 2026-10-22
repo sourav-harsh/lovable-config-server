@@ -10,7 +10,7 @@ spring:
   ai:
     model.chat: openai
     openai:
-      api-key: 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
+      api-key: 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
       base-url: https://openrouter.ai/api
       chat:
         options:
