@@ -15,7 +15,7 @@ spring:
         max-interval: 15s 
     model.chat: openai
     openai:
-      api-key: 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
+      api-key: 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
       base-url: https://openrouter.ai/api
       chat:
         options:
